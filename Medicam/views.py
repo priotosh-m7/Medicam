@@ -9,5 +9,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 import os
 
+
+def createSuperUser(request):
+    admin = os.system("python manage.py createsuperuser")
+    return
 def index(request):
     return render(request,'index.html')
