@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Brain Tumor Analysis</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
+    <style>
+        #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover{
+    color:#5ce1e6
+}
+::selection{
+    background-color: #5ce1e6;
+}
+    </style>
+
+
+</head>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
+        <div class="container"><a class="navbar-brand text-capitalize fw-semibold" href="#page-top" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page contact-us-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading" style="padding: 0%;">
+
+                </div>
+                {% if submitted %}
+                <br>
+            <h1 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Upload Successful!!!!!</span></h1>
+            <br>
+            <h2 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Here are you results</span></h2>
+            <br>
+                    <p style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.6);">Our machine learning model has made the following analysis/prediction</span>&nbsp;</p>
+            <div style="width: 100%;">
+                <div style="width:100% ; display:flex;">
+                <div style="width: 50%; text-align: center;"><img src="{% static 'assets/media/images/{{ i }}' %}" alt="no image" height="300px" width="300px"><br><br> <h4 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7); align-items: center;">Uploaded Image</span></h4></div>
+                <div style="width: 50%; text-align: center;"><img src="C:\Medicam\media\images\image30_ty2cYmg.jpg" alt="no image" height="300px" width="300px"> <br> <br><h4 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7); align-items: center;">De-Noised Image</span></h4></div>
+            </div>
+                <br>
+                <br>
+                <h2 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Result : {{result}} </span></h2>
+                <br>
+                <br>
+                <button class="btn btn-primary" type="button" href='' onclick="img/" style= "align-content: center;">Scan another image</button>
+                <br>
+                <br>
+                <h4>{{ i }}</h4>
+                <h4 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Disclaimer : This is just a precautionary tool which is not medically certified. Consult a radiologist for further concrete diagnosis </span></h4>
+
+
+
+            </div>
+
+        {% else %}
+        <br>
+        <h2 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7); text-align: center;">Brain Tumor Analyzer</span></h2>
+        <br>
+        <p style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.6);text-align: center;">Upload a .jpg/.jpeg/.png image </span>&nbsp;</p>
+        <br>
+
+        <form style="border-top-color: rgba(8,105,86,0.95);" method = "post" enctype="multipart/form-data" action="">
+                   {% csrf_token  %}
+
+            <div class="mb-3"><label class="form-label" for="image">Upload image</label></div>
+                <div>{{form.image}}</div>
+
+
+                    <div style="width: 100%;  margin-top: 10px;">
+
+                    <div class="mb-3" style="width: 100%;"><label class="form-label" for="username">Enter the generated number {{ i }}</label></div>
+                    <div >{{no}}</div>
+                    <br>
+                        {{ form.user}}
+                    <br>
+                    </div>
+
+                    <div class="mb-3"></div><button class="btn btn-primary" type="submit">Upload</button>
+
+                </form>
+
+                {% endif %}
+            </div>
+          <!----  <div class="imagedisplay">
+                <img src="{{img}}" alt="no image">
+            </div>
+
+            {% if submitted %}
+            Your file uploaded successfully
+
+        {% else %}
+        <form method = "post" enctype="multipart/form-data" action="">
+            {% csrf_token %}
+            <div class="mb-3"><label class="form-label" for="name">Name</label></div>
+            {{ form.image}}
+            <div class="mb-3"><label class="form-label" for="name">Name</label></div>
+            {{form.user}}
+            {{ form.image}}
+            {{form.user}}
+            <button type="submit btn btn-secondary">Upload</button>
+        </form>
+
+
+        {% endif %}
+
+    -->
+
+
+
+
+
+        </section>
+    </main>
+
+    <footer style="background-color: rgba(33, 27, 39, 0.534);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2022</span></div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'assets/js/script.min.js' %}"></script>
+
+</body>
+</html>

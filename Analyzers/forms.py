@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import UploadImage
+from .models import UploadImage,UploadChestImage, UploadKidneyImage
 
 class UploadImageForm(ModelForm):
     class Meta:
@@ -9,6 +9,22 @@ class UploadImageForm(ModelForm):
         labels = {
             'user':'',
             'image':'',
+        }
+class UploadKidneyImageForm(ModelForm):
+    class Meta:
+        model = UploadKidneyImage
+        fields = "__all__"
+        labels = {
+            'user': '',
+            'image': '',
+        }
+class UploadChestImageForm(ModelForm):
+    class Meta:
+        model = UploadChestImage
+        fields = "__all__"
+        labels = {
+            'user': '',
+            'image': '',
         }
        # widgets = {
           #  'user': forms.TextInput(attrs= {'class : form-control'}),
