@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Information Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Figtree:wght@300&family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap'); </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <style>
+        #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover{
+    color:#5ce1e6
+}
+        .accordion-item{
+            background-color: var(--bs-secondary);
+        }
+        .accordion-button{
+            background-color: #9ea5ab;
+        }
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: rgba(92, 225, 230,0.35);
+    box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    color:black;
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-button{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+}
+        .accordion-button:focus {
+
+    z-index: 3;
+    border-color: #5ce1e6;
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+        .accordion-button{
+            height: 120px;
+        }
+        .accordion-body{
+            font-family: 'Figtree', sans-serif;
+            font-size: large;
+        }
+::selection{
+    background-color: #5ce1e6;
+}
+    </style>
+
+   
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
+        <div class="container"><a class="navbar-brand text-capitalize fw-semibold" href="#page-top" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Image Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="masthead bg-dark" id="home" >
+
+        <div class="container" >
+            <div class="intro-text" >
+                <div style="background-color: #a2a9af7b; width:60% ;padding: 5%; border: 20px ;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="intro-lead-in" style="text-align: left;"><span ">Welcome To Our website!</span></div>
+                <div class="intro-heading text-uppercase" style="text-align: left; font-size: 24px;"><div >MEDICAL IMAGE ANALYSIS </div><div >for early disease diagnosis</div></div>
+                <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Brain Tumors</a></div>
+                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Kidney Stones</a></div>
+                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Kidney Tumors</a></div>
+                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Kidney Cysts</a></div>
+           </div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <section id="brain-tumors" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="color: black;">Brain Tumor</h2>
+                    <br>
+                </div>
+            </div>
+
+
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-secondary" >
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne" >
+      <button class="accordion-button" style="height: 100px;"type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        About
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.
+
+It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.
+
+Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Symptoms
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <p>Simple kidney cysts typically don't cause symptoms. But if a simple kidney cyst grows large enough, symptoms may include:
+        <ul>
+          <li>Dull pain in the back or side</li>
+<li>Fever</li>
+<li>Upper stomach pain</li>
+      </ul>
+        </p>
+
+          <p>Make an appointment with your health care provider if you have symptoms of a kidney cyst.</p>
+      </div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+        Causes
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+      <div class="accordion-body">
+        <p>It's not clear what causes simple kidney cysts. One theory suggests that kidney cysts develop when the surface layer
+            of the kidney weakens and forms a pouch. The pouch then fills with fluid, detaches and develops into a cyst.</p>
+      </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+        Risk Factors
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+      <div class="accordion-body">
+        Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
+          simple kidney cysts. Interestingly, diet and lifestyle factors do not seem to impact the risk of developing these cysts.
+        Simple kidney cysts are fairly common as people age, however. In fact, up to 25 percent of adults over age 40 and half of
+          those over 50 develop simple kidney cysts at some point.
+        Additionally, men may be slightly more likely to develop simple kidney cysts than women.
+
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+        Complications
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+      <div class="accordion-body">
+        <p>Kidney cysts may sometimes lead to complications, including:</p>
+<ul>
+    <li><strong>An infected cyst : </strong> A kidney cyst may become infected, causing fever and pain.</li>
+    <li><strong>A burst cyst : </strong> A kidney cyst that bursts causes severe pain in the back or side. Sometimes a burst cyst may cause blood in the urine.</li>
+    <li><strong>Blocked urine flow:</strong> A kidney cyst that blocks the typical flow of urine may lead to kidney swelling.</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+        Diagnosis
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
+      <div class="accordion-body">
+        <p>Along with a physical exam and a family medical history, your doctor may use several tests to help them diagnose kidney cysts. These include:
+
+
+</p>
+<ul>
+    <li>Imaging tests, such as ultrasound, magnetic resonance imaging (MRI), and computed tomography (CT) scans</li>
+    <li>Blood tests to measure how well your kidneys work</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Treatment
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+          <p>Most simple kidney cysts do not need any treatment beyond periodic monitoring.</p>
+          <p>Kidney cysts that cause symptoms may require treatment, particularly if they block the flow of urine or blood through the kidneys. In these cases, a doctor may recommend draining the cyst, using a procedure called sclerotherapy.</p>
+          <p>During sclerotherapy, a doctor uses ultrasound to guide a needle to the cyst. The sac of fluid is then punctured with the needle and drained.</p>
+          <p>Next, the doctor will inject a saline solution into the area to harden the surrounding tissue and prevent another cyst from forming. The procedure is done using local anaesthesia and on an outpatient basis.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+            <br>
+            <br>
+            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/kidney">Proceed to Kidney Scan Analyzer</a></div>
+            </div>
+
+        </div>
+    </section>
+    <section id="pneumonia" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="color: white;">Pneumonia</h2>
+                    <br>
+                </div>
+            </div>
+
+
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-secondary" >
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne" >
+      <button class="accordion-button" style="height: 100px;"type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        About
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. The air
+sacs may fill with fluid or pus (purulent material), causing cough with phlegm or
+pus, fever, chills, and difficulty breathing. A variety of organisms, including
+bacteria, viruses and fungi, can cause pneumonia.
+Pneumonia can range in seriousness from mild to life-threatening. It is most serious
+for infants and young children, people older than age 65, and people with health
+problems or weakened immune systems.
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Symptoms
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <p>The signs and symptoms of pneumonia vary from mild to severe, depending on
+factors such as the type of germ causing the infection, and your age and overall
+health. Mild signs and symptoms often are similar to those of a cold or flu, but they
+            last longer.</p>
+
+          <p>Signs and symptoms of pneumonia may include:</p>
+
+        <ul>
+            <li> Chest pain when you breathe or cough                                        </li>
+            <li> Confusion or changes in mental awareness (in adults age 65 and older)       </li>
+            <li> Cough, which may produce phlegm                                             </li>
+            <li> Fatigue                                                                     </li>
+            <li> Fever, sweating and shaking chills                                          </li>
+            <li> Lower than normal body temperature (in adults older than age 65 and people
+              with weak immune systems)                                                 </li>
+            <li> Nausea, vomiting or diarrhea                                                </li>
+            <li> Shortness of breath                                                         </li>
+      </ul>
+
+        <p>Newborns and infants may not show any sign of the infection. Or they may vomit,
+have a fever and cough, appear restless or tired and without energy, or have
+            difficulty breathing and eating.</p>
+          <p><strong>When to see a doctor : </strong></p>
+          <p>See your doctor if you have difficulty breathing, chest pain, persistent fever of 102
+F (39 C) or higher, or persistent cough, especially if you're coughing up pus.</p>
+
+          <p>Make an appointment with your health care provider if you have any of the above symptoms</p>
+
+          <p><strong>It's especially important that people in these high-risk groups see a doctor:</strong></p>
+          <ul>
+              <li>Adults older than age 65                                                      </li>
+              <li>Children younger than age 2 with signs and symptoms                           </li>
+              <li>People with an underlying health condition or weakened immune system          </li>
+              <li>People receiving chemotherapy or taking medication that suppresses the immune system</li>
+
+          <li>For some older adults and people with heart failure or chronic lung problems, </li>
+          <li>pneumonia can quickly become a life-threatening condition.                    </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+        Causes
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+      <div class="accordion-body">
+        <p>Many germs can cause pneumonia. The most common are bacteria and viruses in
+the air we breathe. Your body usually prevents these germs from infecting your
+lungs. But sometimes these germs can overpower your immune system, even if
+            your health is generally good.</p>
+<p>Pneumonia is classified according to the types of germs that cause it and where you
+    got the infection.</p>
+          <ul>
+              <li> <strong style="font-size: large;">Community-acquired pneumonia : </strong>
+                  <br>
+                  <br>
+<p>Community-acquired pneumonia is the most common type of pneumonia. It occurs
+    outside of hospitals or other health care facilities.</p>
+    <p>It may be caused by:</p>
+    <ul>
+        <li><strong>Bacteria :</strong><p>The most common cause of bacterial pneumonia in the U.S. is
+Streptococcus pneumoniae. This type of pneumonia can occur on its own or after
+you've had a cold or the flu. It may affect one part (lobe) of the lung, a condition
+    called lobar pneumonia.</p></li>
+        <li><strong>Bacteria-like organisms :</strong> <p>Mycoplasma pneumoniae also can cause pneumonia. It
+typically produces milder symptoms than do other types of pneumonia. Walking
+pneumonia is an informal name given to this type of pneumonia, which typically
+    isn't severe enough to require bed rest.</p></li>
+        <li><strong>Fungi : </strong><p>This type of pneumonia is most common in people with chronic health
+problems or weakened immune systems, and in people who have inhaled large
+doses of the organisms. The fungi that cause it can be found in soil or bird
+    droppings and vary depending upon geographic location.</p></li>
+        <li><strong>Viruses, including COVID-19 : </strong><p>Some of the viruses that cause colds and the flu
+can cause pneumonia. Viruses are the most common cause of pneumonia in
+children younger than 5 years. Viral pneumonia is usually mild. But in some cases
+it can become very serious. Coronavirus 2019 (COVID-19) may cause pneumonia,
+    which can become severe.</p></li>
+    </ul>
+              </li>
+              <li><strong style="font-size: large">Hospital-acquired pneumonia :</strong>
+                  <br><br>
+<p>Some people catch pneumonia during a hospital stay for another illness. Hospitalacquired pneumonia can be serious because the bacteria causing it may be more
+resistant to antibiotics and because the people who get it are already sick. People
+who are on breathing machines (ventilators), often used in intensive care units, are
+at higher risk of this type of pneumonia.</p>
+              </li>
+
+<li><strong style="font-size: large">Health care-acquired pneumonia : </strong>
+    <br><br>
+<p>Health care-acquired pneumonia is a bacterial infection that occurs in people who
+live in long-term care facilities or who receive care in outpatient clinics, including
+kidney dialysis centers. Like hospital-acquired pneumonia, health care-acquired
+    pneumonia can be caused by bacteria that are more resistant to antibiotics.</p></li>
+              <li><strong style="font-size: large">Aspiration pneumonia : </strong>
+                  <br><br>
+<p>Aspiration pneumonia occurs when you inhale food, drink, vomit or saliva into
+your lungs. Aspiration is more likely if something disturbs your normal gag reflex,
+    such as a brain injury or swallowing problem, or excessive use of alcohol or drugs.</p></li>
+          </ul> </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+        Risk Factors
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+      <div class="accordion-body">
+          <p>Pneumonia can affect anyone. But the two age groups at highest risk are:</p>
+          <ul>
+              <li>Children who are 2 years old or younger </li>
+              <li>People who are age 65 or older          </li>
+          </ul>
+          <p>Other risk factors include:      </p>
+          <ul>
+              <li><strong>Being hospitalized : </strong> You're at greater risk of pneumonia if you're in a hospital intensive care unit, especially if you're on a machine that helps you breathe (a ventilator). </li>
+              <li><strong>Chronic disease : </strong> You're more likely to get pneumonia if you have asthma, chronic obstructive pulmonary disease (COPD) or heart disease.                                       </li>
+              <li><strong>Smoking : </strong> Smoking damages your body's natural defenses against the bacteria and viruses that cause pneumonia.</li>
+              <li><strong>Weakened or suppressed immune system : </strong> People who have HIV/AIDS, who've had an organ transplant, or who receive chemotherapy or long-term steroids are at risk.                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+        Complications
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+      <div class="accordion-body">
+        <p>Even with treatment, some people with pneumonia, especially those in high-risk
+groups, may experience complications, including:
+</p>
+<ul>
+    <li><strong>Bacteria in the bloodstream (bacteremia) : </strong> Bacteria that enter the bloodstream  from your lungs can spread the infection to other organs, potentially causing organ failure.</li>
+    <li><strong>Difficulty breathing : </strong> If your pneumonia is severe or you have chronic underlying lung diseases, you may have trouble breathing in enough oxygen. You may need to be hospitalized and use a breathing machine (ventilator) while your lung heals.</li>
+    <li><strong>Fluid accumulation around the lungs (pleural effusion) : </strong> Pneumonia may cause fluid to build up in the thin space between layers of tissue that line the lungs and chest cavity (pleura). If the fluid becomes infected, you may need to have it drained through a chest tube or removed with surgery.</li>
+    <li><strong>Lung abscess : </strong> An abscess occurs if pus forms in a cavity in the lung. An abscess is usually treated with antibiotics. Sometimes, surgery or drainage with a long needle or tube placed into the abscess is needed to remove the pus.</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+        Diagnosis
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
+      <div class="accordion-body">
+          <p>To diagnose pneumonia, a healthcare provider will ask about your health history and conduct a physical exam. They’ll listen to your lungs with a stethoscope and may perform or order additional tests. These include imaging (like chest X-rays), pulse oximetry (checking oxygen levels in your blood), blood tests or sputum (spit) tests.</p>
+
+<p>Even if your healthcare provider confirms that you have pneumonia, sometimes, they can’t find the exact cause.
+</p>
+          <p>Your provider may perform tests that look at your lungs for signs of infection, measure how well your lungs are working and examine blood or other body fluids to try to determine the cause of your pneumonia. These include:</p>
+        <ul>
+          <li><strong>Imaging: </strong>Your provider can use chest X-ray or CT scan to take pictures of your lungs to look for signs of infection.</li>
+          <li><strong>Blood tests: </strong>Your provider can use a blood test to help determine what kind of infection is causing your pneumonia.</li>
+          <li><strong>Sputum test: </strong>You’re asked to cough and then spit into a container to collect a sample for a lab to examine. The lab will look for signs of an infection and try to determine what’s causing it.</li>
+          <li><strong>Pulse oximetry: </strong>A sensor measures the amount of oxygen in your blood to give your provider an idea of how well your lungs are working.</li>
+          <li><strong>Pleural fluid culture: </strong>Your provider uses a thin needle to take a sample of fluid from around your lungs. The sample is sent to a lab to help determine what’s causing the infection.</li>
+          <li><strong>Arterial blood gas test: </strong>Your provider takes a blood sample from your wrist, arm or groin to measure oxygen levels in your blood to know how well your lungs are working.</li>
+          <li><strong>Bronchoscopy: </strong>In some cases, your provider may use a thin, lighted tube called a bronchoscope to look at the inside of your lungs. They may also take tissue or fluid samples to be tested in a lab.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+                    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading9">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse9" aria-expanded="false" aria-controls="panelsStayOpen-collapse9">
+        Treatment
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse9" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading9">
+      <div class="accordion-body">
+          <p>Treatment for pneumonia depends on the cause — bacterial, viral or fungal — and how serious your case is. In many cases, the cause can’t be determined and treatment is focused on managing symptoms and making sure your condition doesn’t get worse.</p>
+
+<p>Some treatments may include:
+</p>
+        
+        <ul>
+            <li><strong>       Antibiotics: </strong>Antibiotics treat bacterial pneumonia. They can’t treat a virus but a provider may prescribe them if you have a bacterial infection at the same time as a virus.</li>
+            <li><strong>Antifungal medications: </strong> Antifungals can treat pneumonia caused by a fungal infection.</li>
+            <li><strong>Antiviral medications: </strong>Viral pneumonia usually isn’t treated with medication and can go away on its own. A provider may prescribe antivirals such as oseltamivir (Tamiflu®), zanamivir (Relenza®) or peramivir (Rapivab®) to reduce how long you’re sick and how sick you get from a virus.</li>
+            <li><strong>Oxygen therapy: </strong>If you’re not getting enough oxygen, a provider may give you extra oxygen through a tube in your nose or a mask on your face.</li>
+            <li><strong>IV fluids: </strong>Fluids delivered directly to your vein (IV) treat or prevent dehydration.</li>
+            <li><strong>Draining of fluids: </strong>If you have a lot of fluid between your lungs and chest wall (pleural effusion), a provider may drain it. This is done with a catheter or surgery.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading8">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false" aria-controls="panelsStayOpen-collapse8">
+        Prevention
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading8">
+      <div class="accordion-body">
+          <p>To help prevent pneumonia:       </p>
+          <ul>
+          <li><strong>Get vaccinated: </strong> Vaccines are available to prevent some types of pneumonia and the flu. Talk with your doctor about getting these shots. The vaccination guidelines have changed over time so make sure to review your vaccination status with your doctor even if you recall previously receiving a pneumonia vaccine.  </li>
+          <li><strong>Make sure children get vaccinated : </strong> Doctors recommend a different pneumonia vaccine for children younger than age 2 and for children ages 2 to 5 years who are at particular risk of pneumococcal disease. Children who attend a group child care center should also get the vaccine. Doctors also recommend flu shots for children older than 6 months.                   </li>
+          <li><strong>Practice good hygiene : </strong> To protect yourself against respiratory infections that sometimes lead to pneumonia, wash your hands regularly or use an alcohol-based hand sanitizer.     </li>
+          <li><strong>Don't smoke : </strong> Smoking damages your lungs' natural defenses against respiratory infections.   </li>
+          <li><strong>Keep your immune system strong : </strong> Get enough sleep, exercise regularly and eat a healthy diet. </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+            <br>
+            <br>
+            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/chest">Proceed to Chest X-Ray Analyzer</a></div>
+            </div>
+
+        </div>
+    </section>
+    <section id="kidney-stones" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="color: black;">Kidney Stone</h2>
+                    <br>
+                </div>
+            </div>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-secondary" >
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne" >
+      <button class="accordion-button" style="height: 100px;"type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        About
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+          <p>A kidney stone is a hard object that is made from chemicals in the urine. There are four types of kidney stones: calcium oxalate, uric acid, struvite, and cystine. A kidney stone may be treated with shockwave lithotripsy, uteroscopy, percutaneous nephrolithomy or nephrolithotripsy. Common symptoms include severe pain in lower back, blood in your urine, nausea, vomiting, fever and chills, or urine that smells bad or looks cloudy.</p>
+          <p>Urine has various wastes dissolved in it. When there is too much waste in too little liquid, crystals begin to form. The crystals attract other elements and join together to form a solid that will get larger unless it is passed out of the body with the urine. Usually, these chemicals are eliminated in the urine by the body's master chemist: the kidney. In most people, having enough liquid washes them out or other chemicals in urine stop a stone from forming. The stone-forming chemicals are calcium, oxalate, urate, cystine, xanthine, and phosphate.</p>
+<p>After it is formed, the stone may stay in the kidney or travel down the urinary tract into the ureter. Sometimes, tiny stones move out of the body in the urine without causing too much pain. But stones that don't move may cause a back-up of urine in the kidney, ureter, the bladder, or the urethra. This is what causes the pain.
+
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Symptoms
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+          <p> Some kidney stones are as small as a grain of sand. Others are as large as a pebble. A few are as large as a golf ball! As a general rule, the larger the stone, the more noticeable are the symptoms.</p>
+          <p>The symptoms could be one or more of the following:</p>
+          <ul>
+          <li>severe pain on either side of your lower back              </li>
+          <li>more vague pain or stomach ache that doesn't go away       </li>
+          <li>blood in the urine                                         </li>
+          <li>nausea or vomiting                                         </li>
+          <li>fever and chills                                           </li>
+          <li>urine that smells bad or looks cloudy                      </li>
+          </ul>
+          <p>
+The kidney stone starts to hurt when it causes irritation or blockage. This builds rapidly to extreme pain. In most cases, kidney stones pass without causing damage-but usually not without causing a lot of pain. Pain relievers may be the only treatment needed for small stones. Other treatment may be needed, especially for those stones that cause lasting symptoms or other complications. In severe cases, however, surgery may be required.
+
+</p>
+          <p>Make an appointment with your health care provider if you have any of the following symptoms</p>
+      </div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+        Causes
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+      <div class="accordion-body">
+        <p>Possible causes include drinking too little water, exercise (too much or too little), obesity, weight loss surgery, or eating food with too much salt or sugar. Infections and family history might be important in some people. Eating too much fructose correlates with increasing risk of developing a kidney stone. Fructose can be found in table sugar and high fructose corn syrup.</p>
+      </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+        Risk Factors
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+      <div class="accordion-body">
+          <p>Factors that increase your risk of developing kidney stones include:</p>
+          <ul>
+              <li><strong>Family or personal history:</strong> If someone in your family has had kidney stones, you're more likely to develop stones, too. If you've already had one or more kidney stones, you're at increased risk of developing another.</li>
+              <li><strong>Dehydration: </strong> Not drinking enough water each day can increase your risk of kidney stones. People who live in warm, dry climates and those who sweat a lot may be at higher risk than others.</li>
+              <li><strong>Certain diets: </strong> Eating a diet that's high in protein, sodium (salt) and sugar may increase your risk of some types of kidney stones. This is especially true with a high-sodium diet. Too much salt in your diet increases the amount of calcium your kidneys must filter and significantly increases your risk of kidney stones.</li>
+              <li><strong>Obesity: </strong> High body mass index (BMI), large waist size and weight gain have been linked to an increased risk of kidney stones.</li>
+              <li><strong>Digestive diseases and surgery: </strong>Gastric bypass surgery, inflammatory bowel disease or chronic diarrhea can cause changes in the digestive process that affect your absorption of calcium and water, increasing the amounts of stone-forming substances in your urine.</li>
+              <li>Other medical conditions such as renal tubular acidosis, cystinuria, hyperparathyroidism and repeated urinary tract infections also can increase your risk of kidney stones.</li>
+              <li>Certain supplements and medications, such as vitamin C, dietary supplements, laxatives (when used excessively), calcium-based antacids, and certain medications used to treat migraines or depression, can increase your risk of kidney stones</li>
+
+          </ul>
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+        Complications
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+      <div class="accordion-body">
+          <p> Complications can occur after the treatment of large kidney stones.</p>
+          <p>Your surgeon should explain these to you before you have the procedure.                                         </p>
+          <p>Possible complications will depend on the type of treatment you have and the size and position of your stones.  </p>
+          <p>Complications could include:
+</p>
+<ul>
+    <li>   sepsis, an infection that spreads through the blood, causing symptoms throughout the whole body                 </li>
+    <li>	a blocked ureter caused by stone fragments (the ureter is the tube that attaches the kidney to the bladder)   </li>
+    <li>	an injury to the ureter                                                                                       </li>
+    <li>	a urinary tract infection (UTI)                                                                               </li>
+    <li>	bleeding during surgery                                                                                       </li>
+    <li>	pain                                                                                                          </li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+        Diagnosis
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
+      <div class="accordion-body">
+        <p>Along with a physical exam and a family medical history, your doctor may use several tests to help them diagnose kidney cysts. These include:
+
+
+</p>
+<ul>
+    <li>Imaging tests, such as ultrasound, magnetic resonance imaging (MRI), and computed tomography (CT) scans</li>
+    <li>Blood tests to measure how well your kidneys work</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Treatment
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+          <p>The treatment for kidney stones is similar in children and adults.</p>
+          <p>You may be asked to drink a lot of water. Doctors try to let the stone pass without surgery. You may also get medication to help make your urine less acid. But if it is too large, or if it blocks the flow of urine, or if there is a sign of infection, it is removed with surgery.</p>
+          <p><strong>Shock-wave lithotripsy</strong> is a noninvasive procedure that uses high-energy sound waves to blast the stones into fragments that are then more easily passed out in the urine. </p>
+          <p>In <strong>ureteroscopy</strong>, an endoscope is inserted through the ureter to retrieve or obliterate the stone. </p>
+          <p>Rarely, for very large or complicated stones, doctors will use percutaneous <strong>nephrolithotomy/nephrolithotripsy</strong>.</p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+            <br>
+            <br>
+            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/kidney">Proceed to Kidney Scan Analyzer</a></div>
+            </div>
+
+        </div>
+    </section>
+    <section id="kidney-cysts" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="color: white;">Kidney Cysts</h2>
+                    <br>
+                </div>
+            </div>
+
+
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-secondary" >
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne" >
+      <button class="accordion-button" style="height: 100px;"type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        About
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.
+
+It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.
+
+Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Symptoms
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <p>Simple kidney cysts typically don't cause symptoms. But if a simple kidney cyst grows large enough, symptoms may include:
+        <ul>
+          <li>Dull pain in the back or side</li>
+<li>Fever</li>
+<li>Upper stomach pain</li>
+      </ul>
+        </p>
+
+          <p>Make an appointment with your health care provider if you have symptoms of a kidney cyst.</p>
+      </div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+        Causes
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+      <div class="accordion-body">
+        <p>It's not clear what causes simple kidney cysts. One theory suggests that kidney cysts develop when the surface layer
+            of the kidney weakens and forms a pouch. The pouch then fills with fluid, detaches and develops into a cyst.</p>
+      </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+        Risk Factors
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+      <div class="accordion-body">
+        Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
+          simple kidney cysts. Interestingly, diet and lifestyle factors do not seem to impact the risk of developing these cysts.
+        Simple kidney cysts are fairly common as people age, however. In fact, up to 25 percent of adults over age 40 and half of
+          those over 50 develop simple kidney cysts at some point.
+        Additionally, men may be slightly more likely to develop simple kidney cysts than women.
+
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+        Complications
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+      <div class="accordion-body">
+        <p>Kidney cysts may sometimes lead to complications, including:</p>
+<ul>
+    <li><strong>An infected cyst : </strong> A kidney cyst may become infected, causing fever and pain.</li>
+    <li><strong>A burst cyst : </strong> A kidney cyst that bursts causes severe pain in the back or side. Sometimes a burst cyst may cause blood in the urine.</li>
+    <li><strong>Blocked urine flow:</strong> A kidney cyst that blocks the typical flow of urine may lead to kidney swelling.</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+        Diagnosis
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
+      <div class="accordion-body">
+        <p>Along with a physical exam and a family medical history, your doctor may use several tests to help them diagnose kidney cysts. These include:
+
+
+</p>
+<ul>
+    <li>Imaging tests, such as ultrasound, magnetic resonance imaging (MRI), and computed tomography (CT) scans</li>
+    <li>Blood tests to measure how well your kidneys work</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Treatment
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+          <p>Most simple kidney cysts do not need any treatment beyond periodic monitoring.</p>
+          <p>Kidney cysts that cause symptoms may require treatment, particularly if they block the flow of urine or blood through the kidneys. In these cases, a doctor may recommend draining the cyst, using a procedure called sclerotherapy.</p>
+          <p>During sclerotherapy, a doctor uses ultrasound to guide a needle to the cyst. The sac of fluid is then punctured with the needle and drained.</p>
+          <p>Next, the doctor will inject a saline solution into the area to harden the surrounding tissue and prevent another cyst from forming. The procedure is done using local anaesthesia and on an outpatient basis.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+            <br>
+            <br>
+            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/kidney">Proceed to Kidney Scan Analyzer</a></div>
+            </div>
+
+        </div>
+    </section>
+    <section id="kidney-tumors" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="color: black;">Kidney Tumor</h2>
+                    <br>
+                </div>
+            </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-secondary" >
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne" >
+      <button class="accordion-button" style="height: 100px;"type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        About
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <p>The kidneys are organs in the abdomen that remove waste and extra water from the blood (as urine), and help keep chemicals (such as sodium, potassium and calcium) balanced in the body. The kidneys also make hormones that help control blood pressure and stimulate bone marrow to make red blood cells. Kidney tumors (also called renal tumors) are growths in the kidneys that can be benign or cancerous. Most do not cause symptoms and are discovered unexpectedly when you are being diagnosed and treated for another condition.
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading7">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
+        Benign Tumor
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading7">
+      <div class="accordion-body">
+
+          <p> Types of benign kidney tumors include:</p>
+          <ul>
+              <li><strong>Renal adenoma :</strong> Renal adenomas are the most common form of benign, solid kidney   tumor, and are typically small, low-grade growths. Their cause is unknown.</li>
+              <li><strong>Renal oncocytoma :</strong> Oncocytoma is a benign, usually asymptomatic tumor that can grow quite large. They can develop throughout the body and are not unique to the kidneys. Their cause is also unknown, and they appear with greater frequency in men than in women.</li>
+
+              <li><strong>Angiomyolipoma :</strong> Also known as renal hamartoma, angiomyolipomas are rare, benign tumors that can be caused by an inherited genetic mutation. They can occur on an isolated, individual basis, but most often are associated with a rare genetic disease called tuberous sclerosis, which can cause tumors in the skin, kidneys, brain and other organ systems. In patients without tuberous sclerosis, these tumors most often occur in middleaged women.</li>
+
+              <li><strong>Fibroma :</strong> Fibromas are tumors of the fibrous tissue on, in or surrounding the kidney. They are rare and more common in women. Their cause is unknown and most do not cause symptoms.</li>
+
+              <li><strong>Lipoma :</strong> Lipomas are rare renal tumors originating in the fat cells within the renal capsule or surrounding tissue. Lipomas typically occur in middle-aged women.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading8">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false" aria-controls="panelsStayOpen-collapse8">
+        Malignant Tumor
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading8">
+      <div class="accordion-body">
+
+          <p>If a kidney tumor is malignant, it is kidney cancer. The two main types of kidney cancer are <strong>renal cell cancer</strong> and <strong>transitional cell cancer</strong>. In adults, renal cell cancer, which begins in the lining of small tubes inside the kidney, is most common. Transitional cell cancer is far less common. Wilms’ tumor, another type of kidney cancer, is most frequently seen in children.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Symptoms
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+          <p>Most kidney tumors do not usually cause symptoms and are discovered unexpectedly when you are being diagnosed and treated for another condition</p>
+          <p>Common objective symptoms may include:</p>
+          <ul>
+              <li>	Blood in the urine</li>
+<li>	Pain or a lump in the lower back</li>
+<li>	Fatigue</li>
+<li>	Loss of appetite</li>
+<li>Unexpected weight loss</li>
+<li>	Fever</li>
+<li>	Anemia</li>
+
+          </ul>
+
+          <p>Make an appointment with your health care provider if you have symptoms of a kidney cyst.</p>
+      </div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+        Causes
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+      <div class="accordion-body">
+          <p>Healthcare providers and medical researchers don’t know the exact causes of kidney tumors. However, you may increase your likelihood of developing kidney tumors if you:</p>
+
+
+          <ul>
+
+<li>Use tobacco products.                                </li>
+          <li>Regularly have more than seven alcoholic drinks per week.</li>
+          <li>Have obesity.                                        </li>
+          <li>Have a family history of high blood pressure.        </li>
+          <li>Have a family history of kidney tumors.              </li>
+          <li>Are regularly around chemicals that contain chlorine.</li>
+          </ul>
+      </div>
+  </div>
+ </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+        Risk Factors
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+      <div class="accordion-body">
+          <p>Risk factors include:</p>
+          <ul>
+          <li>Obesity</li>
+          <li>Advance age: kidney cancer risk increases with age  </li>
+          <li>Consumption of tobacco in any form chewable or smoking             </li>
+          <li>Hypertension</li>
+          <li>Some disease conditions e.g. Birt-Hogg-Dube syndrome </li>
+          <li>Long-term treatment of kidney disease using dialysis increases risk </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+        Complications
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+      <div class="accordion-body">
+        <p>If untreated for a prolonged period it may lead to :</p>
+
+<ul>
+    <li>Hypertension</li>
+    <li>Metastasis</li>
+    <li>Liver dysfunction</li>
+    <li>Elevated levels of red blood cells</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+        Diagnosis
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
+      <div class="accordion-body">
+       <p>Kidney cancer diagnostic tests may include:</p>
+          <ul>
+          <li><strong>Urine tests: </strong>Using a urine sample from normal urination, clinicians will determine if the urine contains tumor cells. </li>
+          <li><strong>Cystoscopy: </strong>allows the doctor to see inside the body with a thin, lighted, flexible tube called a cystoscope   </li>
+          <li><strong>Biopsy:</strong> the removal of a small amount of tissue for examination under a microscope Computed tomography (CT or CAT) scan: creates a 3-dimensional picture of the inside of the body using x-rays taken from different angles            </li>
+          <li><strong>Magnetic resonance imaging (MRI):</strong> uses magnetic fields, not x-rays, to produce detailed images of the body   </li>
+          <li><strong>Positron emission tomography (PET) scan:</strong> creates pictures of organs and tissues inside the body     </li>
+          <li><strong>Ultrasound:</strong> uses sound waves to create a picture of the internal organs                                </li>
+          <li><strong>Blood tests:</strong> to check for increased blood levels of certain proteins          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Treatment
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+          <p>Surgery is generally the first line treatment for benign kidney tumors or kidney cancer that has not spread. Laparoscopic surgery allows for a minimally invasive operation, with the surgeon making small incisions in the abdomen to insert a small light, camera and other instruments used to view and remove the tumor. It has been shown that laparoscopic surgery is as effective as traditional surgery and makes for an easier recovery.</p>
+          <ul>
+          <li>	Minimally Invasive Urologic Surgery     </li>
+          <li>	Laparoscopic Radical Nephrectomy        </li>
+          <li>	Robotic Partial Nephrectomy             </li>
+          <li>	Radiofrequency Ablation                 </li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+            <br>
+            <br>
+            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/kidney">Proceed to Kidney Scan Analyzer</a></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/creative-market.jpg"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/designmodo.jpg"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/envato.jpg"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/themeforest.jpg"></a></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="background-image:url('/assets/img/map-image.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Contact Us</h2>
+                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2022</span></div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Brain Tumor Analysis</h2>
+                                <button class="btn btn-primary" type="button" href='img/' onclick="location.href='img/'" style= "align-content: center;">Proceed to Analyzer</button>
+                                <p class="text-muted item-intro">Upload Brain MRI scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" onclick="location.href='img/'" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Pneumonia Analyzer</h2>
+                                <button class="btn btn-primary" type="button" href='img/' onclick="location.href='analyzers/chest'" style= "align-content: center;">Proceed to Analyzer</button>
+                                <p class="text-muted item-intro">Upload Chest X-ray scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/2-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Kidney Scan Analyzers</h2>
+                                <button class="btn btn-primary" type="button" href='analyzers/kidney' onclick="location.href='analyzers/kidney'" style= "align-content: center;">Proceed to Analyzer</button>
+                                <p class="text-muted item-intro">Upload Kidney scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/3-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/4-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/5-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/6-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'assets/js/script.min.js' %}"></script>
+</body>
+
+</html>

@@ -15,3 +15,6 @@ def createSuperUser(request):
     return
 def index(request):
     return render(request,'index.html')
+
+def info(request):
+    return render(request,"knowledge.html")

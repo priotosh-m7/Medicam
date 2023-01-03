@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>MediCam</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,17 +20,17 @@
 
    
 </head>
-
+{% load static %}
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
-        <div class="container"><a class="navbar-brand text-capitalize fw-semibold" href="#page-top" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/Internship Logo Drafts.png'  %}"></span><a class="navbar-brand text-capitalize fw-semibold" href="#page-top" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Image Analysis</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -45,7 +45,9 @@
                 <div class="intro-lead-in" style="text-align: left;"><span ">Welcome To Our website!</span></div>
                 <div class="intro-heading text-uppercase" style="text-align: left; font-size: 24px;"><div >MEDICAL IMAGE ANALYSIS </div><div >for early disease diagnosis</div></div>
                 
-                 <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Tell mE more</a></div>
+                 <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#portfolio">Go to Analyzers</a></div>
+                    <br>
+                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="knowledge/">Learn More</a></div>
            </div>
             </div>
 
@@ -58,26 +60,31 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Services</h2>
-                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur</h3>
+                    <h3 class="text-muted section-subheading">What we offer</h3>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
-                    <h4 class="section-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-book fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Knowledge</h4>
+                    <p class="text-muted">A source of information regarding Brain Tumors, Kidney cysts, Kidney stones, Pneumonia , etc</p>
                 </div>
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-laptop fa-stack-1x fa-inverse"></i></span>
-                    <h4 class="section-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-camera fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Medical Image Analysis</h4>
+                    <p class="text-muted">We offer Image Analysis of Brain MRI Scans, Chest X-rays, and Kidney Scans making use of Image processing tools coupled with
+                        powerful Machine Learning algorithms</p>
                 </div>
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-lock fa-stack-1x fa-inverse"></i></span>
-                    <h4 class="section-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-medkit fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Expert Help</h4>
+                    <p class="text-muted">Provide contact of relevant doctors and experts for the concerned </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-dark" id="portfolio">
+    <section class="bg" id="portfolio" style="background-color: #4d5154">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -116,7 +123,7 @@
                     <div class="portfolio-caption" href="#portfolioModal3" data-bs-toggle="modal">
                         <h4>Kidney Scan Analysis</h4>
                         <br>
-                        <p class="text-muted">Analyze Kidney scans for detection and diagnosis of Cysts, Tumor and Scans</p>
+                        <p class="text-muted">Analyze Kidney scans for diagnosis of Cysts, Tumor and Scans</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal4" data-bs-toggle="modal">
@@ -224,6 +231,7 @@
             </div>
         </div>
     </section>
+    <!--
     <section class="bg-light" id="team">
         <div class="container">
             <div class="row">
@@ -263,13 +271,15 @@
             </div>
         </div>
     </section>
+    -->
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/creative-market.jpg"></a></div>
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/designmodo.jpg"></a></div>
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/envato.jpg"></a></div>
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/themeforest.jpg"></a></div>
+                {% load static %}
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/creative-market.jpg'%}"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/designmodo.jpg'%}"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/envato.jpg'%}"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/themeforest.jpg'%}"></a></div>
             </div>
         </div>
     </section>

@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
     path('analyzers/',include('Analyzers.urls')),
+    path('knowledge/',views.info),
 ]

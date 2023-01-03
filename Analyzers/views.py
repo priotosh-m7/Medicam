@@ -161,11 +161,19 @@ def kidneyScans(request):
             import numpy as np
             warnings.filterwarnings('ignore')
             test_image = tensorflow.keras.preprocessing.image.img_to_array(img)
-            test_image = test_image / 255
+            #test_image = test_image / 255
             test_image = np.expand_dims(test_image, axis=0)
             result = model_o.predict(test_image)
 
             result = np.argmax(result)
+            if result == 0:
+                imagename += "Kidney cyst"
+            elif result == 1:
+                imagename += "Normal"
+            elif result == 2:
+                imagename += "Kidney stone"
+            elif result == 3:
+                imagename += "Kidney Tumor"
         # if result[0][0] > 0:
         #     imagename += "Non-Melanoma/ Normal "
         # else:
