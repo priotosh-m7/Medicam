@@ -7,6 +7,7 @@
     <title>Information Page</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/app.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Figtree:wght@300&family=Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
@@ -26,6 +27,9 @@
     color: black;
     background-color: rgba(92, 225, 230,0.35);
     box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgb(92 225 230 / 18%) !important;
 }
 .accordion-button:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-active-icon);
@@ -50,6 +54,23 @@
             font-family: 'Figtree', sans-serif;
             font-size: large;
         }
+        img:hover{
+
+            background-color: #5ce1e6;
+        }
+        .rounded-circle:focus{
+            background-color: #5ce1e6;
+        }
+        .bx{
+            padding: 3px;
+            width: 20%;
+            text-align: center;
+        }
+        .rounded-circle{
+            border: 4px solid;
+            border-color: #5ce1e6;
+
+        }
 ::selection{
     background-color: #5ce1e6;
 }
@@ -58,17 +79,18 @@
    
 </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+<body class="bg-dark" id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
-        <div class="container"><a class="navbar-brand text-capitalize fw-semibold" href="#page-top" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/Internship Logo Drafts.png'  %}" href="http://127.0.0.1:8000/#pageTop"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#pageTop" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Image Analysis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#portfolio">Image Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/knowledge">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#about">About</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -76,22 +98,42 @@
     
     <header class="masthead bg-dark" id="home" >
 
-        <div class="container" >
-            <div class="intro-text" >
-                <div style="background-color: #a2a9af7b; width:60% ;padding: 5%; border: 20px ;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <div class="intro-lead-in" style="text-align: left;"><span ">Welcome To Our website!</span></div>
-                <div class="intro-heading text-uppercase" style="text-align: left; font-size: 24px;"><div >MEDICAL IMAGE ANALYSIS </div><div >for early disease diagnosis</div></div>
-                <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Brain Tumors</a></div>
-                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Kidney Stones</a></div>
-                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Kidney Tumors</a></div>
-                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#services">Kidney Cysts</a></div>
-           </div>
+        <div class="container bg-dark">
+            <div class="row" style="padding-top: 7%;">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">What do you want to learn about</h2>
+                  <!--  <h3 class="text-muted section-subheading">Choose the Analyzer you want to test and use</h3>-->
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="bx" ><div class="timeline-image"><a href="#brain-tumors"><img class="shadow-lg rounded-circle img-fluid" src="{% static 'assets/img/about/BRAIN TUMOR.jpg'%}" ></a></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"><a href="#pneumonia"><img class="shadow-lg rounded-circle img-fluid" src="{% static 'assets/img/about/PNEUMONIA.jpg'%}" ></a></div></div>
+
+            </div>
+            <div class="row m-5">
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"><a href="#kidney-cysts" class="portfolio-link"><img class="shadow-lg rounded-circle img-fluid" src="{% static 'assets/img/about/KIDNEY CYSTS.jpg'%}" ></a></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"><a href="#kidney-stones"><img class="shadow-lg rounded-circle img-fluid" src="{% static 'assets/img/about/KIDNEY STONES.jpg'%}" ></a></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+
+            </div>
+            <div class="row m-5">
+                <div class="bx" ><div class="timeline-image"><a href="#kidney-tumors"><img class="shadow-lg rounded-circle img-fluid" src="{% static 'assets/img/about/KIDNEY TUMOR.jpg'%}" ></a></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"></div></div>
+                <div class="bx" ><div class="timeline-image"><a href="http://127.0.0.1:8000/#portfolio"><img class="shadow-lg rounded-circle img-fluid" src="{% static 'assets/img/about/MIA.jpg'%}" ></a></div>
+
             </div>
 
 
         </div>
+        </div>
     </header>
-
 
     <section id="brain-tumors" class="bg-light">
         <div class="container">
@@ -113,12 +155,11 @@
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
       <div class="accordion-body">
-        <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.
+          <p>A brain tumor is a mass or growth of abnormal cells in your brain.</p>
+          <p>Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors.</p>
+          <p>How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.</p>
+          <p>Brain tumor treatment options depend on the type of brain tumor you have, as well as its size and location.</p>
 
-It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.
-
-Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
-</p>
       </div>
     </div>
   </div>
@@ -130,15 +171,24 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
       <div class="accordion-body">
-        <p>Simple kidney cysts typically don't cause symptoms. But if a simple kidney cyst grows large enough, symptoms may include:
-        <ul>
-          <li>Dull pain in the back or side</li>
-<li>Fever</li>
-<li>Upper stomach pain</li>
-      </ul>
-        </p>
-
-          <p>Make an appointment with your health care provider if you have symptoms of a kidney cyst.</p>
+          <p>The signs and symptoms of a brain tumor vary greatly and depend on the brain tumor's size, location, and rate of growth. </p>
+          <p>General signs and symptoms caused by brain tumors may include:                                                           </p>
+          <ul>
+          <li>New onset or change in the pattern of headaches                                            </li>
+          <li>Headaches that gradually become more frequent and more severe                              </li>
+          <li>Unexplained nausea or vomiting                                                             </li>
+          <li>Vision problems, such as blurred vision, double vision, or loss of peripheral vision       </li>
+          <li>Gradual loss of sensation or movement in an arm or a leg                                   </li>
+          <li>Difficulty with balance                                                                    </li>
+          <li>Speech difficulties                                                                        </li>
+          <li>Feeling very tired                                                                         </li>
+          <li>Confusion in everyday matters                                                              </li>
+          <li>Difficulty making decisions                                                                </li>
+          <li>Inability to follow simple commands                                                        </li>
+          <li>Personality or behavior changes                                                            </li>
+          <li>Seizures, especially in someone who doesn't have a history of seizures                </li>
+        <li>Hearing problems                                                                           </li>
+          </ul>
       </div>
     </div>
   </div>
@@ -150,8 +200,42 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
       <div class="accordion-body">
-        <p>It's not clear what causes simple kidney cysts. One theory suggests that kidney cysts develop when the surface layer
-            of the kidney weakens and forms a pouch. The pouch then fills with fluid, detaches and develops into a cyst.</p>
+          <ul>
+              <li><strong>Brain tumors that begin in the brain</strong>
+                  <br>
+                  <br>
+                  <p>Primary brain tumors originate in the brain itself or tissues close to it, such as in the brain-covering membranes (meninges), cranial nerves, pituitary gland, or pineal gland.</p>
+                  <p>Primary brain tumors begin when normal cells develop changes (mutations) in their DNA. A cell's DNA contains the instructions that tell a cell what to do. The mutations tell the cells to grow and divide rapidly and to continue living when healthy cells would die. The result is a mass of abnormal cells, which forms a tumor.</p>
+                  <p>In adults, primary brain tumors are much less common than secondary brain tumors, in which cancer begins elsewhere and spreads to the brain.</p>
+                  <p>Many different types of primary brain tumors exist. Each gets its name from the type of cells involved. </p>
+                  <p>Examples include:</p>
+                  <ul>
+                      <li><strong>Gliomas:</strong> These tumors begin in the brain or spinal cord and include astrocytomas, ependymomas, glioblastomas, oligoastrocytomas, and oligodendrogliomas.                                                                                     </li>
+                      <li><strong>Meningiomas:</strong> A meningioma is a tumor that arises from the membranes that surround your brain and spinal cord (meninges). Most meningiomas are noncancerous.                                                                                                  </li>
+                      <li><strong>Acoustic neuromas (schwannomas):</strong> These are benign tumors that develop on the nerves that control balance and hearing leading from your inner ear to your brain.                                                                                             </li>
+                      <li><strong>Pituitary adenomas:</strong> These are tumors that develop in the pituitary gland at the base of the brain. These tumors can affect the pituitary hormones with effects throughout the body.                                                                          </li>
+                      <li><strong>Medulloblastomas:</strong> These cancerous brain tumors are most common in children, though they can occur at any age. A medulloblastoma starts in the lower back part of the brain and tends to spread through the spinal fluid.                       </li>
+                      <li><strong>Germ cell tumors:</strong> Germ cell tumors may develop during childhood when the testicles or ovaries will form. But sometimes germ cell tumors affect other parts of the body, such as the brain.                                                                 </li>
+                      <li><strong>Craniopharyngiomas:</strong> These rare tumors start near the brain's pituitary gland, which secretes hormones that control many body functions. As the craniopharyngioma slowly grows, it can affect the pituitary gland and other structures near the brain.       </li>
+                  </ul> </li>
+              <br>
+
+              <li><strong>Cancer that begins elsewhere and spreads to the brain</strong>
+                  <br>
+                  <br>
+                  <p>Secondary (metastatic) brain tumors are tumors that result from cancer that starts elsewhere in your body and then spreads (metastasizes) to your brain.</p>
+                  <p>Secondary brain tumors most often occur in people who have a history of cancer. Rarely, a metastatic brain tumor may be the first sign of cancer that began elsewhere in your body.</p>
+                  <p>In adults, secondary brain tumors are far more common than primary brain tumors.</p>
+                  <p>Any cancer can spread to the brain, but common types include:</p>
+                  <ul>
+                      <li><strong>Breast cancer </strong></li>
+                      <li><strong>Colon cancer  </strong></li>
+                      <li><strong>Kidney cancer </strong></li>
+                      <li><strong>Lung cancer   </strong></li>
+                      <li><strong>Melanoma </strong></li>
+                  </ul>
+              </li>
+          </ul>
       </div>
     </div>
   </div>
@@ -163,11 +247,12 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
       <div class="accordion-body">
-        Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
-          simple kidney cysts. Interestingly, diet and lifestyle factors do not seem to impact the risk of developing these cysts.
-        Simple kidney cysts are fairly common as people age, however. In fact, up to 25 percent of adults over age 40 and half of
-          those over 50 develop simple kidney cysts at some point.
-        Additionally, men may be slightly more likely to develop simple kidney cysts than women.
+          <p>In most people with primary brain tumors, the cause of the tumor isn't clear. But doctors have identified some factors that may increase your risk of a brain tumor.</p>
+          <p>Risk factors include:</p>
+          <ul>
+              <li><strong>Radiation exposure:</strong> People who have been exposed to a type of radiation called ionizing radiation have an increased risk of brain tumors. Examples of ionizing radiation include radiation therapy used to treat cancer and radiation exposure caused by atomic bombs.</li>
+              <li><strong>Family history of brain tumors:</strong> A small portion of brain tumors occurs in people with a family history of brain tumors or a family history of genetic syndromes that increase the risk of brain tumors.</li>
+          </ul>
 
       </div>
     </div>
@@ -180,11 +265,43 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
       <div class="accordion-body">
-        <p>Kidney cysts may sometimes lead to complications, including:</p>
+          <p>Your brain is in charge of everything your body does, including vision, hearing, speech, and movement. As brain cancer grows, it presses on and damages areas that control these things. That can lead to complications like headaches, seizures, vision and hearing loss, and balance issues. Your doctor will help you manage these problems while you get treatments for your cancer.</p>
 <ul>
-    <li><strong>An infected cyst : </strong> A kidney cyst may become infected, causing fever and pain.</li>
-    <li><strong>A burst cyst : </strong> A kidney cyst that bursts causes severe pain in the back or side. Sometimes a burst cyst may cause blood in the urine.</li>
-    <li><strong>Blocked urine flow:</strong> A kidney cyst that blocks the typical flow of urine may lead to kidney swelling.</li>
+    <li><strong>Fatigue</strong>
+        <p>A lot of people with brain cancer deal with this. You feel exhausted because your body uses a lot of energy to fight off the tumor. Cancer-related fatigue isn't normal tiredness. It wipes you out. Cancer also makes it harder for you to sleep soundly. Even when you can sleep, it doesn't always relieve the weariness. To curb fatigue, break up tasks into small chunks and take rest breaks during the day.</p></li>
+
+    <li><strong>Headaches</strong>
+        <p>About half of people with brain cancer get headaches. The tumor itself doesn't cause pain. But as it grows, it can press on sensitive nerves and blood vessels in the brain. Headaches can last for several hours. They can feel dull, aching, pounding, or throbbing. They’re often worse in the morning or can flare up when you cough or exercise. Your doctor can prescribe medicine to help control the pain.</p></li>
+
+    <li><strong>Nausea and Vomiting</strong>
+        <p>A tumor can make you sick to your stomach if it presses on certain areas of your brain. Cancer treatments like radiation and chemotherapy also cause nausea and vomiting. "Anti-emetic" medicines relieve nausea. They come in a liquid, tablet, and capsule -- or as a suppository if you're too sick to swallow medicine. Call your doctor if you can't keep down any foods or fluids, or if you've been throwing up for more than 24 hours.</p></li>
+
+    <li><strong>Speech and Language Problems</strong>
+        <p>Cancer can affect parts of your brain that help you speak and process language. You might struggle to find the right words, or mix up words when you describe objects ("chair" instead of "table,” for instance). It can also be harder to understand what other people say or to follow a conversation. Language problems can be frustrating. Relax and slow down when you speak. A speech and language therapist can also help with communication.</p></li>
+    <li><strong>Vision Problems</strong>
+        <p>A brain area called the occipital lobe processes the images your eyes see. A tumor in this part of the brain could affect your vision. Blurred vision, double vision, and floating spots can all be signs of a brain tumor. Your sight might go gray when you stand up or change position quickly. If you have these symptoms, see your doctor for a vision test. Surgery and other treatments that shrink the tumor can improve vision problems.</p></li>
+
+    <li><strong>Hearing Loss</strong>
+<p>A tumor can put pressure on the nerves in your inner ear that move sound from your ear to your brain. Depending on where the tumor is, you might first lose the ability to hear high-pitched or low-pitched sounds. Ringing in the ears is also common. The hearing loss can come on slowly, and it might only be in one ear. See your doctor for a hearing test and treatment options.
+</p></li>
+    <li><strong>Balance Issues</strong>
+        <p>The cerebellum, an area in the lower part of your brain, controls your coordination and balance. This region helps keep you steady on your feet. A tumor in the cerebellum can throw off your balance and cause you to stumble or drop things. If you have balance problems, see a physical therapist. You might need a walker or cane to help you get around safely. Wear shoes with non-skid soles, and avoid walking on uneven or slippery surfaces.</p></li>
+
+    <li><strong>Personality and Mood Changes</strong>
+<p>More than half of people with brain cancer have personality or mood changes. It's common to feel more angry, withdrawn, anxious, or irritable than usual. Some of these changes may be part of your response to your cancer diagnosis and treatment. Others start when the tumor grows into areas of your brain that control mood and emotion. Talk with your doctor or a mental health specialist. Therapy can help you manage what you're going through.
+</p></li>
+    <li><strong>Deep Vein Thrombosis (DVT)</strong>
+<p>Tumors release chemicals that make your body more likely to form blood clots. Nearly 1 in 5 people with brain tumors get deep vein thrombosis (DVT), a clot in a deep vein in the leg. If the clot moves into your lungs (pulmonary embolism), it could be life-threatening. See a doctor if you have swelling, redness, and tenderness in your leg. Taking blood thinners will stop the clot from getting bigger and prevent new clots from forming.
+</p></li>
+    <li><strong>Memory Loss</strong>
+<p>If you're more forgetful, it could be due to both your cancer and its treatments. Tumors can harm short-term and long-term memory, depending on their location. Chemotherapy and other treatments affect concentration and leave you mentally foggy. You may hear it called "chemo brain." Use a notebook, daily planner, and smartphone apps to remind you. An occupational therapist can show you how to make work and home tasks easier.
+</p></li>
+    <li><strong>Seizures</strong>
+<p>About 60% of people with brain cancer get seizures, which are sudden bursts of abnormal electrical activity in the brain. Tumors may trigger them by changing brain cells or chemicals in a way that makes nerve cells fire too often. During a seizure, some people shake. Others stare off into space. Anti-seizure medicines can help. Also, avoid triggers, like loud noises or too little sleep.
+</p></li>
+    <li><strong>Numbness and Weakness</strong>
+<p>A brain area called the parietal lobe helps you process the sensation of touch. A tumor in this part of your brain can cause numbness or a tingling sensation that feels like pins and needles. Often the numbness affects only one side of your body, such as one arm or leg. One side of your body might also be weaker than the other. Tell your doctor about these symptoms.
+</p></li>
 </ul>
       </div>
     </div>
@@ -199,15 +316,30 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
       <div class="accordion-body">
-        <p>Along with a physical exam and a family medical history, your doctor may use several tests to help them diagnose kidney cysts. These include:
-
-
-</p>
+          <p>If it's suspected that you have a brain tumor, your doctor may recommend several tests and procedures, including:</p>
 <ul>
-    <li>Imaging tests, such as ultrasound, magnetic resonance imaging (MRI), and computed tomography (CT) scans</li>
-    <li>Blood tests to measure how well your kidneys work</li>
+    <li><strong>A neurological exam </strong>
+        <p>A neurological exam may include, among other things, checking your vision, hearing, balance, coordination, strength, and reflexes. Difficulty in one or more areas may provide clues about the part of your brain that could be affected by a brain tumor.</p></li>
 
+<li><strong>Imaging tests </strong>
+    <p><strong>Magnetic resonance imaging (MRI)</strong> is commonly used to help diagnose brain tumors. Sometimes a dye is injected through a vein in your arm during your MRI study.</p>
+
+    <p>Several specialized MRI scan components — including functional MRI, perfusion MRI and magnetic resonance spectroscopy — may help your doctor evaluate the tumor and plan treatment.</p>
+
+    <p>Sometimes other imaging tests are recommended in certain situations, including <strong>computerized tomography (CT)</strong> and <strong>positron emission tomography (PET)</strong>.</p>
+</li>
+
+    <li><strong>Collecting and testing a sample of abnormal tissue (biopsy)</strong>
+        <p>A biopsy can be performed as part of an operation to remove the brain tumor, or a biopsy can be performed using a needle.</p>
+
+        <p>A <strong>stereotactic needle biopsy</strong> may be done for brain tumors in hard-to-reach areas or very sensitive areas within your brain that might be damaged by a more extensive operation. Your neurosurgeon drills a small hole into your skull. A thin needle is then inserted through the hole. Tissue is removed using the needle, which is frequently guided by CT or MRI scanning.</p>
+
+        <p>The biopsy sample is then viewed under a microscope to determine if it's cancerous or benign. Sophisticated laboratory tests can give your doctor clues about your prognosis and your treatment options. Studying your biopsy sample and determining exactly which type of brain tumor you have is a complex process. </p>
+    </li>
 </ul>
+          <p>If you're uncertain about your diagnosis, consider seeking a second opinion at a medical center where many brain biopsies are evaluated every year.</p>
+
+
       </div>
     </div>
   </div>
@@ -219,18 +351,70 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
       <div class="accordion-body">
-          <p>Most simple kidney cysts do not need any treatment beyond periodic monitoring.</p>
-          <p>Kidney cysts that cause symptoms may require treatment, particularly if they block the flow of urine or blood through the kidneys. In these cases, a doctor may recommend draining the cyst, using a procedure called sclerotherapy.</p>
-          <p>During sclerotherapy, a doctor uses ultrasound to guide a needle to the cyst. The sac of fluid is then punctured with the needle and drained.</p>
-          <p>Next, the doctor will inject a saline solution into the area to harden the surrounding tissue and prevent another cyst from forming. The procedure is done using local anaesthesia and on an outpatient basis.</p>
+          <p>Treatment for a brain tumor depends on the type, size, and location of the tumor, as well as your overall health and your preferences.</p>
+          <ul>
+              <li><strong>Surgery</strong>
+                  <br><br>
+                  <p>If the brain tumor is located in a place that makes it accessible for an operation, your surgeon will work to remove as much of the brain tumor as can be done safely.</p>
 
+                  <p>Some brain tumors are small and easy to separate from surrounding brain tissue, which makes complete surgical removal possible. Other brain tumors can't be separated from surrounding tissue or they're located near sensitive areas in your brain, making surgery risky. In these situations, your doctor removes as much of the tumor as is safe.                            </p>
+
+                  <p>Even removing a portion of the brain tumor may help reduce your signs and symptoms.         </p>
+
+                  <p>Surgery to remove a brain tumor carries risks, such as infection and bleeding. Other risks may depend on the part of your brain where your tumor is located. For instance, surgery on a tumor near nerves that connect to your eyes may carry a risk of vision loss.                                                                                         </p>
+              </li>
+              <li><strong>Radiation therapy</strong>
+                  <br><br>
+              <p>Radiation therapy uses high-energy beams, such as X-rays or protons, to kill tumor cells. Radiation therapy can come from a machine outside your body (external beam radiation), or, very rarely, radiation can be placed inside your body close to your brain tumor (brachytherapy). </p>
+
+              <p><strong>External beam radiation </strong>can focus just on the area of your brain where the tumor is located, or it can be applied to your entire brain (whole-brain radiation). Whole-brain radiation is most often used to treat cancer that spreads to the brain from some other part of the body and forms multiple tumors in the brain.  </p>
+
+              <p>Traditionally, radiation therapy uses X-rays, but a newer form of this treatment uses proton beams. <strong>Proton beam therapy</strong> allows doctors to control the radiation more precisely. It may help treat brain tumors in children and tumors that are very close to sensitive areas of the brain. Proton beam therapy isn't as widely available as traditional X-ray radiation therapy.</p>
+
+                <p>Side effects of radiation therapy depend on the type and dose of radiation you receive. Common side effects during or immediately following radiation include fatigue, headaches, memory loss, scalp irritation, and hair loss.</p>
+              </li>
+              <li><strong>Radiosurgery </strong>
+                  <br><br>
+              <p><strong>Stereotactic radiosurgery</strong>, which uses small gamma rays to deliver a precise dose of radiation to the target.Stereotactic radiosurgery is not a form of surgery in the traditional sense. Instead, radiosurgery uses multiple beams of radiation to give a highly focused form of radiation treatment to kill the tumor cells in a very small area. Each beam of radiation isn't particularly powerful, but the point where all the beams meet — at the brain tumor — receives a very large dose of radiation to kill the tumor cells.    </p>
+
+                  <p>There are different types of technology used in radiosurgery to deliver radiation to treat brain tumors, such as a Gamma Knife or linear accelerator. </p>
+
+                  <p>Radiosurgery is typically done in one treatment, and usually, you can go home the same day.       </p> </li>
+
+              <li><strong>Chemotherapy</strong>
+                  <br><br>
+                  <p><strong>Chemotherapy</strong> uses drugs to kill tumor cells. Chemotherapy drugs can be taken orally in pill form or injected into a vein (intravenously). The chemotherapy drug used most often to treat brain tumors is temozolomide (Temodar). Other chemotherapy drugs may be recommended depending on the type of cancer.  </p>
+
+                  <p>Chemotherapy side effects depend on the type and dose of drugs you receive. Chemotherapy can cause nausea, vomiting, and hair loss.           </p>
+
+                  <p>Tests of your brain tumor cells can determine whether chemotherapy will be helpful for you. The type of brain tumor you have also helps determine whether to recommend chemotherapy.    </p>
+              </li>
+
+              <li><strong>Targeted drug therapy     </strong>
+                  <br><br>
+                  <p>Targeted drug treatments focus on specific abnormalities present within cancer cells. By blocking these abnormalities, targeted drug treatments can cause cancer cells to die.           </p>
+
+                  <p>Targeted therapy drugs are available for certain types of brain tumors, and many more are being studied in clinical trials. Your doctor may have your tumor cells tested to see whether targeted therapy is likely to be an effective treatment for your brain tumor.      </p>
+              </li>
+
+              <li><strong>Rehabilitation after treatment          </strong>
+                  <br><br>
+                  <p>Because brain tumors can develop in parts of the brain that control motor skills, speech, vision, and thinking, rehabilitation may be a necessary part of recovery. Depending on your needs, your doctor may refer you to: </p>
+                      <ul>
+                          <li>Physical therapy to help you regain lost motor skills or muscle strength                                                       </li>
+                          <li>Occupational therapy to help you get back to your normal daily activities, including work, after a brain tumor or other illness</li>
+                          <li>Speech therapy with specialists in speech difficulties (speech pathologists) to help if you have difficulty speaking           </li>
+                          <li>Tutoring for school-age children to help kids cope with changes in their memory and thinking after a brain tumor               </li>
+                      </ul>
+              </li>
+          </ul>
       </div>
     </div>
   </div>
 </div>
             <br>
             <br>
-            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/kidney">Proceed to Kidney Scan Analyzer</a></div>
+            <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  style="width: 100%;" role="button" href="http://127.0.0.1:8000/analyzers/brain">Proceed to Brain Tumor Analyzer</a></div>
             </div>
 
         </div>

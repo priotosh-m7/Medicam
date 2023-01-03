@@ -2,4 +2,15 @@
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover{
     color:#5ce1e6
 }
+.cols{
+    width: 50%;
+    display: flex;
+}
+.rows{
+    width: 100%;
+}
+.boxes{
+    width: 33%;
+    text-align: center;
 
+}
