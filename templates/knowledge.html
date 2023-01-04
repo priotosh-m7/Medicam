@@ -863,11 +863,11 @@ The kidney stone starts to hurt when it causes irritation or blockage. This buil
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
       <div class="accordion-body">
-        <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.
+          <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.</p>
 
-It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.
+          <p>It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.</p>
 
-Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
+<p>Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
 </p>
       </div>
     </div>
@@ -913,11 +913,11 @@ Simple kidney cysts are often found during an imaging test for another condition
     </h2>
     <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
       <div class="accordion-body">
-        Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
+       <p>Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
           simple kidney cysts. Interestingly, diet and lifestyle factors do not seem to impact the risk of developing these cysts.
         Simple kidney cysts are fairly common as people age, however. In fact, up to 25 percent of adults over age 40 and half of
           those over 50 develop simple kidney cysts at some point.
-        Additionally, men may be slightly more likely to develop simple kidney cysts than women.
+           Additionally, men may be slightly more likely to develop simple kidney cysts than women.</p>
 
       </div>
     </div>
@@ -1193,38 +1193,41 @@ Simple kidney cysts are often found during an imaging test for another condition
     </section>
     <section id="contact" style="background-image:url('/assets/img/map-image.png');">
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Contact Us</h2>
-                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+
+                    <div class="col-lg-12 text-center">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" onclick="location.href='#home'" type="submit">Back to Top</button>
+                            </div>
+                    <!--
+                    {% csrf_token %}
+                    <form id="contactForm" name="contactForm" novalidate="novalidate" method="POST" action="http://127.0.0.1:8000//formsubmit/">
+                        {% csrf_token %}
                         <div class="row">
+
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="tel" name="phone" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><textarea class="form-control" id="message"name="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="w-100"></div>
+
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </form>-->
+
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2022</span></div>
+                <div class="col-md-4"><span class="copyright" style="color: #5ce1e6">Copyright&nbsp;© MediCam 2023</span></div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -1241,6 +1244,7 @@ Simple kidney cysts are often found during an imaging test for another condition
             </div>
         </div>
     </footer>
+    <!--
     <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -1379,6 +1383,7 @@ Simple kidney cysts are often found during an imaging test for another condition
             </div>
         </div>
     </div>
+    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'assets/js/script.min.js' %}"></script>
 </body>

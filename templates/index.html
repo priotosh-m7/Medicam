@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Medical Image Analyzers</h2>
+                    <h2 class="text-uppercase section-heading" style="color: white;">Medical Image Analyzers</h2>
                     <h3 class="text-muted section-subheading">Choose the Analyzer you want to test and use</h3>
                 </div>
             </div>
@@ -127,6 +127,7 @@
                         <p class="text-muted">Analyze Kidney scans for diagnosis of Cysts, Tumor and Scans</p>
                     </div>
                 </div>
+                <!--
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal4" data-bs-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
@@ -160,9 +161,26 @@
                         <p class="text-muted">Analyze Brain MRI scasns for possible Tumors</p>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </section>
+    <section id="aboutus" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">About Us</h2>
+                    <h3 class="text-muted section-subheading">What we provide</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+            <p style="text-align: justify;">MRI image processing methods for detecting and classifying brain tumors are the right solution in the medical field. It can help the medical team to identify and classify brain tumors using MRI images. And from the existing algorithm, it can be seen that the Support Vector Machine is the best method for classifying brain tumors based on MRI images supported by some preprocessing and feature extraction as well as the Radial basis function (RBNFF) method. It is hoped that the future MRI image processing can combine various existing image processing methods to obtain the best results for reading MRI images for the detection and classification of brain tumors.</p>
+
+
+            </div>
+        </div>
+    </section>
+    <!--
     <section id="about">
         <div class="container">
             <div class="row">
@@ -232,6 +250,7 @@
             </div>
         </div>
     </section>
+    -->
     <!--
     <section class="bg-light" id="team">
         <div class="container">
@@ -289,20 +308,22 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Contact Us</h2>
-                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    {% csrf_token %}
+                    <form id="contactForm" name="contactForm" novalidate="novalidate" method="POST" action="http://127.0.0.1:8000//formsubmit/">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="tel" name="phone" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><textarea class="form-control" id="message"name="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-lg-12 text-center">

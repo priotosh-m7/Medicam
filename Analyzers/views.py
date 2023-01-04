@@ -108,10 +108,10 @@ def chestXray(request):
             test_image = np.expand_dims(test_image, axis=0)
             result = model_o.predict(test_image)
             #result = np.argmax(result, axis=1)
-        # if result[0][0] > 0:
-        #     imagename += "Non-Melanoma/ Normal "
-        # else:
-        #     imagename += "Melanoma / Anomaly Detected"
+            if result[0][0] < 0:
+                imagename += "Normal"
+            else:
+                imagename += "Pneumonia"
 
         else:
             form = UploadChestImageForm

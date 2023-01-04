@@ -45,26 +45,38 @@
                 </div>
                 {% if submitted %}
                 <br>
-            <h1 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Upload Successful!!!!!</span></h1>
+            <h1 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Upload Successful!!!!!</span></h1>
             <br>
-            <h2 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Here are you results</span></h2>
+                    <br>
+            <h2 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Here are you results</span></h2>
             <br>
-                    <p style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.6);">Our machine learning model has made the following analysis/prediction</span>&nbsp;</p>
+                    <br>
+                    <p style="text-align: center;"><span style="color: #5ce1e6;">Our machine learning model has made the following analysis/prediction</span>&nbsp;</p>
+                    <br>
             <div style="width: 100%;">
                 <div style="width:100% ; display:flex;">
-                <div style="width: 50%; text-align: center;"><img src="{% static 'assets/media/images/{{ i }}' %}" alt="no image" height="300px" width="300px"><br><br> <h4 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7); align-items: center;">Uploaded Image</span></h4></div>
-                <div style="width: 50%; text-align: center;"><img src="C:\Medicam\media\images\image30_ty2cYmg.jpg" alt="no image" height="300px" width="300px"> <br> <br><h4 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7); align-items: center;">De-Noised Image</span></h4></div>
+                <div style="width: 100%; text-align: center;"><img src="{{ context.image.url }}" alt="no image" height="300px" width="300px"><br><br> <h4 class="text-info" style="text-align: center;"><span style="color: #5ce1e6; align-items: center;">Uploaded Image</span></h4></div>
+
             </div>
                 <br>
                 <br>
-                <h2 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Result : {{result}} </span></h2>
+                {% if imagename == "Normal" %}
+                <h2 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Result : Your Results are Normal / No abnormality detected </span></h2>
+                    {% else %}
+                    <h2 class="text-info" style="text-align: center;"><span style="color: darkred;">Result : Pneumonia detected </span></h2>
+                    {% endif %}
+            <br>
+                <br>
+                <button class="btn btn-primary" type="button" href='http://127.0.0.1:8000/knowledge#pneumonia'  style= "align-content: center;width: 100%;">Learn More about Pneumonia</button>
                 <br>
                 <br>
-                <button class="btn btn-primary" type="button" href='' onclick="analyzers/kidney/" style= "align-content: center;">Scan another image</button>
+                <br>
+                <br>
+                <button class="btn btn-secondary" type="button" href='' onclick="location.href=''" style= "align-content: center;width: 100%">Scan another image</button>
                 <br>
                 <br>
                 <h4>{{ i }}</h4>
-                <h4 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Disclaimer : This is just a precautionary tool which is not medically certified. Consult a radiologist for further concrete diagnosis </span></h4>
+                <h4 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Disclaimer : This is just a precautionary tool which is not medically certified. Consult a radiologist for further concrete diagnosis </span></h4>
 
 
 
