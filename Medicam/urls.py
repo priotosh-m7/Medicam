@@ -23,10 +23,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='home'),
+    path('formsubmit/',views.formsubmit),
     path('analyzers/',include('Analyzers.urls')),
     path('knowledge/',views.info),
-    path('formsubmit/',views.formsubmit),
-
 ]+ static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()

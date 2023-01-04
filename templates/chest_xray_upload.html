@@ -22,7 +22,7 @@
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
 
 <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
-       <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/Internship Logo Drafts.png'  %}" href="http://127.0.0.1:8000/#home"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#home" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+       <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/medicam.png'  %}" href="http://127.0.0.1:8000/#home"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#home" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#home">Home</a></li>
@@ -45,14 +45,11 @@
                 </div>
                 {% if submitted %}
                 <br>
-            <h1 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Upload Successful!!!!!</span></h1>
+            <h1 class="text-info" style="text-align: center;"><span style="color: rgba(8, 105, 86, 0.7);">Upload Successful!!!!!</span></h1>
             <br>
-                    <br>
             <h2 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Here are you results</span></h2>
             <br>
-                    <br>
                     <p style="text-align: center;"><span style="color: #5ce1e6;">Our machine learning model has made the following analysis/prediction</span>&nbsp;</p>
-                    <br>
             <div style="width: 100%;">
                 <div style="width:100% ; display:flex;">
                 <div style="width: 100%; text-align: center;"><img src="{{ context.image.url }}" alt="no image" height="300px" width="300px"><br><br> <h4 class="text-info" style="text-align: center;"><span style="color: #5ce1e6; align-items: center;">Uploaded Image</span></h4></div>
@@ -60,22 +57,21 @@
             </div>
                 <br>
                 <br>
-                {% if imagename == "Normal" %}
-                <h2 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Result : Your Results are Normal / No abnormality detected </span></h2>
-                    {% else %}
-                    <h2 class="text-info" style="text-align: center;"><span style="color: darkred;">Result : Pneumonia detected </span></h2>
-                    {% endif %}
+                {% if imagename == "N" %}
+                <h2 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Result : Your Scans are normal </span></h2>
+                {% else %}
+                    <h2 class="text-info" style="text-align: center;"><span style="color: darkred;">Result : Peumonia suspected / detected </span></h2>
+                {% endif %}
+                <br>
+                <br>
+                <button class="btn btn-primary" type="button" href='http://127.0.0.1:8000/#home' onclick='//127.0.0.1:8000/#home' style= "align-content: center;width: 100%;"><a href="http://127.0.0.1:8000//knowledge#pneumonia" style="color: white">Learn More about Pneumonia</a></button>
             <br>
-                <br>
-                <button class="btn btn-primary" type="button" href='http://127.0.0.1:8000/knowledge#pneumonia'  style= "align-content: center;width: 100%;">Learn More about Pneumonia</button>
-                <br>
-                <br>
-                <br>
-                <br>
-                <button class="btn btn-secondary" type="button" href='' onclick="location.href=''" style= "align-content: center;width: 100%">Scan another image</button>
+            <br>
+            <br>
+            <button class="btn btn-secondary" type="button" href='' onclick="location.href=''" style= "align-content: center;width: 100%;">Scan another image</button>
                 <br>
                 <br>
-                <h4>{{ i }}</h4>
+
                 <h4 class="text-info" style="text-align: center;"><span style="color: #5ce1e6;">Disclaimer : This is just a precautionary tool which is not medically certified. Consult a radiologist for further concrete diagnosis </span></h4>
 
 

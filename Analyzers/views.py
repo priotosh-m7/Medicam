@@ -22,8 +22,7 @@ def brainTumor(request):
         form = UploadImageForm(request.POST, request.FILES)
 
         if form.is_valid():
-            yup = ['10000']
-            form.user.join(yup)
+
             user = form.cleaned_data['user']
             i = form.cleaned_data['image']
             submitted = True
@@ -44,10 +43,18 @@ def brainTumor(request):
             import numpy as np
             warnings.filterwarnings('ignore')
             test_image = tensorflow.keras.preprocessing.image.img_to_array(img)
-            test_image = test_image / 255
+            #test_image = test_image / 255
             test_image = np.expand_dims(test_image, axis=0)
             result = model_o.predict(test_image)
             result = np.argmax(result, axis=1)
+            if result == 0:
+                imagename += 'Glioma Tumor'
+            elif result == 1:
+                imagename += 'N'
+            elif result == 2:
+                imagename += 'Meningioma Tumor'
+            else:
+                imagename += 'Pituitary Tumor'
         # if result[0][0] > 0:
         #     imagename += "Non-Melanoma/ Normal "
         # else:
@@ -63,7 +70,7 @@ def brainTumor(request):
     context = p_image
 
     # load model
-    no = datetime.datetime.now().timestamp()
+    no = int(random.randint(1,999999))
     return render(request, 'brain_tumor_upload.html',
                   {'form': form, 'submitted': submitted, 'context': p_image, 'result': result, 'no': no,
                    'imagename': imagename, 'i': i})
@@ -107,11 +114,15 @@ def chestXray(request):
             test_image = test_image / 255
             test_image = np.expand_dims(test_image, axis=0)
             result = model_o.predict(test_image)
-            #result = np.argmax(result, axis=1)
-            if result[0][0] < 0:
-                imagename += "Normal"
+            if result[0][0]>0:
+                imagename += "A"
             else:
-                imagename += "Pneumonia"
+                imagename += "N"
+            #result = np.argmax(result, axis=1)
+        # if result[0][0] > 0:
+        #     imagename += "Non-Melanoma/ Normal "
+        # else:
+        #     imagename += "Melanoma / Anomaly Detected"
 
         else:
             form = UploadChestImageForm
@@ -123,7 +134,7 @@ def chestXray(request):
     context = p_image
 
     # load model
-    no = datetime.datetime.now().timestamp()
+    no = int(random.randint(1,999999))
     return render(request, 'chest_xray_upload.html',
                   {'form': form, 'submitted': submitted, 'context': p_image, 'result': result, 'no': no,
                    'imagename': imagename, 'i': i})
@@ -189,7 +200,7 @@ def kidneyScans(request):
     context = p_image
 
     # load model
-    no = datetime.datetime.now().timestamp()
+    no = int(random.randint(1,999999))
     return render(request, 'kidney_upload.html',
                   {'form': form, 'submitted': submitted, 'context': p_image, 'result': result, 'no': no,
                    'imagename': imagename, 'i': i})

@@ -81,7 +81,7 @@
 
 <body class="bg-dark" id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
-        <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/Internship Logo Drafts.png'  %}" href="http://127.0.0.1:8000/#pageTop"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#pageTop" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/medicam.png'  %}" href="http://127.0.0.1:8000/#pageTop"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#pageTop" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#home">Home</a></li>
@@ -863,11 +863,11 @@ The kidney stone starts to hurt when it causes irritation or blockage. This buil
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
       <div class="accordion-body">
-          <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.</p>
+        <p>Kidney cysts are round pouches of fluid that form on or in the kidneys. Kidney cysts can occur with disorders that may impair kidney function. But more often, kidney cysts are a type called simple kidney cysts. Simple kidney cysts aren't cancer and rarely cause problems.
 
-          <p>It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.</p>
+It's not clear what causes simple kidney cysts. Often, one cyst occurs on the surface of a kidney. But more than one cyst can appear on one or both kidneys. Simple kidney cysts aren't the same as cysts that form with polycystic kidney disease. Simple cysts also differ from complex cysts. Complex cysts need to be watched for changes that could be cancer.
 
-<p>Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
+Simple kidney cysts are often found during an imaging test for another condition. Treatment usually isn't needed unless simple cysts cause symptoms.
 </p>
       </div>
     </div>
@@ -913,11 +913,11 @@ The kidney stone starts to hurt when it causes irritation or blockage. This buil
     </h2>
     <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
       <div class="accordion-body">
-       <p>Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
+        Doctors are not sure why simple kidney cysts form. Other than aging, there are no real risk factors for developing
           simple kidney cysts. Interestingly, diet and lifestyle factors do not seem to impact the risk of developing these cysts.
         Simple kidney cysts are fairly common as people age, however. In fact, up to 25 percent of adults over age 40 and half of
           those over 50 develop simple kidney cysts at some point.
-           Additionally, men may be slightly more likely to develop simple kidney cysts than women.</p>
+        Additionally, men may be slightly more likely to develop simple kidney cysts than women.
 
       </div>
     </div>
@@ -1184,50 +1184,48 @@ The kidney stone starts to hurt when it causes irritation or blockage. This buil
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/creative-market.jpg"></a></div>
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/designmodo.jpg"></a></div>
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/envato.jpg"></a></div>
-                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="/assets/img/clients/themeforest.jpg"></a></div>
+                {% load static %}
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/creative-market.jpg'%}"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/designmodo.jpg'%}"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/envato.jpg'%}"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{%static '/assets/img/clients/themeforest.jpg'%}"></a></div>
             </div>
         </div>
     </section>
-    <section id="contact" style="background-image:url('/assets/img/map-image.png');">
+    <!--style="background-image:url('/assets/img/map-image.png');"-->
+    <section id="contact" >
         <div class="container">
-
-            <div class="row">
-
-                    <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center">
                                 <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" onclick="location.href='#home'" type="submit">Back to Top</button>
                             </div>
-                    <!--
-                    {% csrf_token %}
-                    <form id="contactForm" name="contactForm" novalidate="novalidate" method="POST" action="http://127.0.0.1:8000//formsubmit/">
-                        {% csrf_token %}
+            <!--
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" name="contactForm" novalidate="novalidate">
                         <div class="row">
-
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="tel" name="phone" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><textarea class="form-control" id="message"name="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="w-100"></div>
-
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                             </div>
                         </div>
-                    </form>-->
-
+                    </form>
+                </div>
             </div>
+            -->
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><span class="copyright" style="color: #5ce1e6">Copyright&nbsp;© MediCam 2023</span></div>
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2022</span></div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -1244,146 +1242,7 @@ The kidney stone starts to hurt when it causes irritation or blockage. This buil
             </div>
         </div>
     </footer>
-    <!--
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Brain Tumor Analysis</h2>
-                                <button class="btn btn-primary" type="button" href='img/' onclick="location.href='img/'" style= "align-content: center;">Proceed to Analyzer</button>
-                                <p class="text-muted item-intro">Upload Brain MRI scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
 
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" onclick="location.href='img/'" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Pneumonia Analyzer</h2>
-                                <button class="btn btn-primary" type="button" href='img/' onclick="location.href='analyzers/chest'" style= "align-content: center;">Proceed to Analyzer</button>
-                                <p class="text-muted item-intro">Upload Chest X-ray scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/2-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Kidney Scan Analyzers</h2>
-                                <button class="btn btn-primary" type="button" href='analyzers/kidney' onclick="location.href='analyzers/kidney'" style= "align-content: center;">Proceed to Analyzer</button>
-                                <p class="text-muted item-intro">Upload Kidney scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/3-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal4">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/4-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal5">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/5-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal6">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/6-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'assets/js/script.min.js' %}"></script>
 </body>

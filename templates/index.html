@@ -23,7 +23,7 @@
 {% load static %}
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="background-color: rgba(33, 27, 39, 0.534);">
-        <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/Internship Logo Drafts.png'  %}" href="http://127.0.0.1:8000/#home"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#home" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><span ><img height="50px" style="padding-right: 10px;" src="{%static 'assets/img/medicam.png'  %}" href="http://127.0.0.1:8000/#home"></span><a class="navbar-brand text-capitalize fw-semibold" href="http://127.0.0.1:8000/#home" style="color: #5ce1e6; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Medicam&nbsp;</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/#home">Home</a></li>
@@ -43,12 +43,12 @@
         <div class="container" >
             <div class="intro-text" >
                 <div style="background-color: #a2a9af7b; width:60% ;padding: 5%; border: 20px ;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <div class="intro-lead-in" style="text-align: left;"><span ">Welcome To Our website!</span></div>
+                <div class="intro-lead-in" style="text-align: left;"><span >Welcome To <strong style="color: #5ce1e6">Medi</strong>Cam </span></div>
                 <div class="intro-heading text-uppercase" style="text-align: left; font-size: 24px;"><div >MEDICAL IMAGE ANALYSIS </div><div >for early disease diagnosis</div></div>
                 
-                 <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="#portfolio">Go to Analyzers</a></div>
+                 <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" style="width: 100%;" href="#portfolio">Go to Analyzers</a></div>
                     <br>
-                    <div style="text-align:left ;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" href="knowledge/">Learn More</a></div>
+                    <div style="text-align:left ; width: 100%;"><a class="btn btn-primary btn-xl text-uppercase"  role="button" style="width: 100%;" href="knowledge/">Learn More</a></div>
            </div>
             </div>
 
@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading" style="color: white;">Medical Image Analyzers</h2>
+                    <h2 class="text-uppercase section-heading" style="color: white">Medical Image Analyzers</h2>
                     <h3 class="text-muted section-subheading">Choose the Analyzer you want to test and use</h3>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal2" data-bs-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/imagesres/eye_1_11zon.jpg' %}">
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/imagesres/Pneumonia.jpeg' %}">
                     </a>
                     <div class="portfolio-caption" href="#portfolioModal2" data-bs-toggle="modal">
                         <h4>Pneumonia Analysis</h4>
@@ -165,19 +165,39 @@
             </div>
         </div>
     </section>
-    <section id="aboutus" >
+     <section id="about" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">About Us</h2>
-                    <h3 class="text-muted section-subheading">What we provide</h3>
+
                 </div>
             </div>
-            <div class="row text-center">
-            <p style="text-align: justify;">MRI image processing methods for detecting and classifying brain tumors are the right solution in the medical field. It can help the medical team to identify and classify brain tumors using MRI images. And from the existing algorithm, it can be seen that the Support Vector Machine is the best method for classifying brain tumors based on MRI images supported by some preprocessing and feature extraction as well as the Radial basis function (RBNFF) method. It is hoped that the future MRI image processing can combine various existing image processing methods to obtain the best results for reading MRI images for the detection and classification of brain tumors.</p>
-
-
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Brain Tumor Analyzer</h2>
+                    <p>The Brain Tumor classifier analyzes brain MRI scans to detect brain tumor in MRI scans . It further classifies detected tumors into Pituitiary,Glioma and Meningioma tumor </p>
+                </div>
             </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class=" section-heading">Pneumonia/Chest X-Ray Analyzer</h2>
+                    <p>The Chest X-Ray / Pneumonia anaylzer analyzes Chest X-rays to detect the presence of Pneumonia in the lungs</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class=" section-heading">Kidney Scan Analyzer</h2>
+                    <p>The Kidney Scan classifier analyzes kidney MRI scans to detect kidney disorders in MRI scans . It further classifies uploaded scans into Kidney Stones , Kidney Cysts, Kidney Tumors or Normal </p>
+                </div>
+            </div>
+
         </div>
     </section>
     <!--
@@ -314,16 +334,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     {% csrf_token %}
-                    <form id="contactForm" name="contactForm" novalidate="novalidate" method="POST" action="http://127.0.0.1:8000//formsubmit/">
+                    <form id="contactForm" name="contactForm" novalidate="novalidate" method="post" action="formsubmit/">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="text" id="name" name="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="email" name="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
                                 <div class="form-group mb-3"><input class="form-control" type="tel" name="phone" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><textarea class="form-control" id="message"name="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><textarea class="form-control" id="message" name="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-lg-12 text-center">
@@ -338,7 +358,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2022</span></div>
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© MediCam 2023</span></div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -363,15 +383,11 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <h2 class="text-uppercase">Brain Tumor Analysis</h2>
-                                <button class="btn btn-primary" type="button" href='img/' onclick="location.href='img/'" style= "align-content: center;">Proceed to Analyzer</button>
+                                <button class="btn btn-primary"  type="button" href='img/' onclick="location.href='analyzers/brain'" style= "align-content: center;width: 100%">Proceed to Analyzer</button>
                                 <p class="text-muted item-intro">Upload Brain MRI scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>The Brain Tumor classifier analyzes brain MRI scans to detect brain tumor in MRI scans . It further classifies detected tumors into Pituitiary,Glioma and Meningioma tumor </p>
 
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" onclick="location.href='img/'" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                <button class="btn btn-primary" type="button" onclick="location.href=''" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close</span></button>
                             </div>
                         </div>
                     </div>
@@ -386,16 +402,12 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Pneumonia Analyzer</h2>
-                                <button class="btn btn-primary" type="button" href='img/' onclick="location.href='analyzers/chest'" style= "align-content: center;">Proceed to Analyzer</button>
-                                <p class="text-muted item-intro">Upload Chest X-ray scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/2-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                <h2 class="text-uppercase">Pneumonia Analysis</h2>
+                                <button class="btn btn-primary"  type="button" href='img/' onclick="location.href='anaylzers/chest'" style= "align-content: center;width: 100%">Proceed to Analyzer</button>
+                                <p class="text-muted item-intro">Upload Chest X-Ray scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
+                                <p>The Chest X-Ray / Pneumonia anaylzer analyzes Chest X-rays to detect the presence of Pneumonia in the lungs</p>
+
+                                <button class="btn btn-primary" type="button" onclick="location.href=''" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close</span></button>
                             </div>
                         </div>
                     </div>
@@ -407,19 +419,15 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="container">
-                    <div class="row">
+                    <div class="row my-2">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Kidney Scan Analyzers</h2>
-                                <button class="btn btn-primary" type="button" href='analyzers/kidney' onclick="location.href='analyzers/kidney'" style= "align-content: center;">Proceed to Analyzer</button>
-                                <p class="text-muted item-intro">Upload Kidney scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/3-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                <h2 class="text-uppercase">Kidney Scan Analysis</h2>
+                                <button class="btn btn-primary"  type="button" href='img/' onclick="location.href='analyzers/kidney'" style= "align-content: center;width: 100%">Proceed to Analyzer</button>
+                                <p class="text-muted item-intro">Upload Kidney MRI scans for analysis </p><img class="img-fluid d-block mx-auto" height="300px" width="300px" src="{%static "/assets/img/portfolio/scan-1.jpeg"%}">
+                                <p>The Kidney Scan classifier analyzes kidney MRI scans to detect kidney disorders in MRI scans . It further classifies uploaded scans into Kidney Stones , Kidney Cysts, Kidney Tumors or Normal </p>
+
+                                <button class="btn btn-primary" type="button" onclick="location.href=''" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close</span></button>
                             </div>
                         </div>
                     </div>
