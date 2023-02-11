@@ -36,7 +36,7 @@ def brainTumor(request):
 
             img = tensorflow.keras.preprocessing.image.load_img("C:\\Medicam" + p_image.image.url,
                                                                 target_size=(150, 150))
-            img.save('C:\\Medicam\\static\\braintumor' + p_image.image.url)
+            #img.save('C:\\Medicam\\static\\braintumor' + p_image.image.url)
             # denoising
 
             import warnings
@@ -104,7 +104,7 @@ def chestXray(request):
 
             img = tensorflow.keras.preprocessing.image.load_img("C:\\Medicam" + p_image.image.url,
                                                                 target_size=(200, 200))
-            img.save('C:\\Medicam\\static' + p_image.image.url)
+            #img.save('C:\\Medicam\\static' + p_image.image.url)
             # denoising
 
             import warnings
@@ -165,7 +165,7 @@ def kidneyScans(request):
 
             img = tensorflow.keras.preprocessing.image.load_img("C:\\Medicam" + p_image.image.url,
                                                                 target_size=(180,180))
-            img.save('C:\\Medicam\\static' + p_image.image.url)
+           # img.save('C:\\Medicam\\static' + p_image.image.url)
             # denoising
 
             import warnings
