@@ -1,4 +1,4 @@
-# Medical Image Analysis Website - Readme
+# Medicam - Readme
 
 ## Overview
 
@@ -76,7 +76,7 @@ To run the application locally, follow these steps:
 
 ## Credits
 
-- **Developers**: [Your Name(s)]
+- **Developers**: Priotosh Mondal, Harshita Arnala, Kanak Pendse, Siddharth Rawlani, Doulat Lalwani, Om Gaydhane
 
 ## Disclaimer
 
