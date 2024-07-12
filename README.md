@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Django-based web application provides a user-friendly interface for medical image analysis, focusing on brain tumor detection from MRI scans, pneumonia detection from chest scans, and kidney disease classification from kidney scans. Users can upload their scans in JPEG/JPG format and receive results from the respective Convolutional Neural Network (CNN) models. Additionally, the website includes an informative page containing details about the causes, symptoms, and treatments for various brain, kidney, and chest diseases.
+This Django-based web application provides a user-friendly interface for medical image analysis, focusing on brain tumor detection from MRI scans, pneumonia detection from chest scans, and kidney disease classification from kidney scans. Users can upload their scans in JPEG/JPG format and receive results from the respective Convolutional Neural Network (CNN) models. Additionally, the website includes an informative page containing details about the causes, symptoms, and treatments for various brain, kidney, and chest diseases.Users can easily upload their medical scans in JPEG or JPG format through a clean and intuitive interface.
 
 ## Features
 
